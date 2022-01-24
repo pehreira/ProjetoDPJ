@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime; //tira por cada segundo 1 ao countdown
 
-        waveCountdownText.text = Mathf.Round(countdown).ToString(); //se usares texto
+        //waveCountdownText.text = Mathf.Round(countdown).ToString(); //se usares texto
     }
 
     IEnumerator SpawnWave() //corotina
@@ -44,5 +44,7 @@ public class WaveSpawner : MonoBehaviour
     void spawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        
+
     }
 }
